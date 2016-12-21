@@ -1,0 +1,15 @@
+{
+  "name": "graphql-lambda-handler",
+  "version": "1.0.0",
+  "description": "GraphQL handler for Lambda endpoint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "per@pjarts.se",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^0.8.2",
+    "graphql-tools": "^0.8.4"
+  }
+}

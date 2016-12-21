@@ -1,0 +1,24 @@
+{
+  "name": "graphql-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "start-db": "dynalite --createTableMs 50",
+    "test": "mocha --compilers js:babel-core/register",
+    "build:api": "babel './api/graphql/index.js' --out-file './api/graphql/Bundle.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "aws-sdk": "^2.7.16",
+    "babel-core": "^6.21.0",
+    "babel-preset-latest": "^6.16.0",
+    "chai": "^3.5.0",
+    "dynalite": "^1.0.3",
+    "graphql": "^0.8.2",
+    "latlon-geohash": "^1.1.0",
+    "mocha": "^3.2.0"
+  }
+}
