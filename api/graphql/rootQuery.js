@@ -1,13 +1,9 @@
 'use strict'
 
 const graphql = require('graphql')
-const penguin = require('./resources/Penguin/penguinQuery')
-
-const rootFields = Object.assign({},
-    penguin
-)
+const queryFields = require('./resources').queryFields
 
 module.exports = new graphql.GraphQLObjectType({
     name: 'RootQuery',
-    fields: () => rootFields
+    fields: () => queryFields
 })
