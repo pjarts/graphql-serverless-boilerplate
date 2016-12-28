@@ -31,7 +31,7 @@ function stopEnv() {
 
 function createEventFromQuery(query, variables) {
     return {
-        queryStringParameters: {
+        query: {
             query,
             variables
         }

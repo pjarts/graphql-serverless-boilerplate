@@ -2,7 +2,7 @@
 
 let graphql = require('graphql').graphql
 
-let schema = require('./schema')
+let schema = require('./rootSchema')
 
 const apiHandler = (query, vars) => {
     return graphql(schema, query, null, {}, vars)

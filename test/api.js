@@ -34,7 +34,7 @@ describe('GraphQL API', () => {
     it('should be possible to get a penguin by id', done => {
         const id = 'penguin1';
         const expected = Penguin.items.filter(penguin => penguin.id === id)[0]
-        const event = createEventFromQuery(`query ($id: ID) { penguin (id: $id) { id, name, age } }`, { id })
+        const event = createEventFromQuery(`query ($id: ID!) { penguin (id: $id) { id, name, age } }`, { id })
         handler.graphql(event, null, (err, data) => {
             if (err) console.error(err)
             expect(data.data.penguin).to.exist
