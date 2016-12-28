@@ -1,7 +1,5 @@
 'use strict'
 
-const penguin = require('./Penguin')
-
 const mutationFields = Object.assign({},
     require('./Penguin/penguinMutation')
 )
